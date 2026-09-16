@@ -3,11 +3,11 @@ import React from "react";
 import Dashboard from "./Dashboard";
 import TopBar from "./TopBar";
 
-const Home = () => {
+const Home = ({ user }) => {
   return (
     <>
-      <TopBar />
-      <Dashboard />
+      <TopBar user={user} />
+      <Dashboard user={user} />
     </>
   );
 };
